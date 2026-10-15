@@ -1,0 +1,123 @@
+{% extends "_base.html" %}
+{% set titulek = 'T&B s.r.o. – colná deklarácia, colný sklad a autodoprava, Šaľa' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="hero-foto">{{ img('vozidlo.jpg', 'Dodávka T&B na ceste', sizes='100vw') }}</div>
+  <div class="wrap hero-text">
+    <p class="kicker">Colná deklarácia · Colný sklad · Autodoprava</p>
+    <h1>Rýchlo a spoľahlivo.<br>Tovar, doklady aj clo na jednom mieste.</h1>
+    <p class="lead">Prepravou tovaru a colnou deklaráciou sa zaoberáme od roku 1991. Z Šale a Galanty vybavíme colné konanie, uskladnenie aj dopravu.</p>
+    <p><a class="tlacitko" href="#kontakt">Pošlite dopyt</a> <a class="tlacitko druhe" href="#sluzby">Naše služby</a></p>
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <p class="kicker">Hlavné činnosti</p>
+    <h2>Od colnej deklarácie až po dodanie tovaru</h2>
+    <p class="miesta" aria-label="Trasa tovaru"><span>Galanta · clo</span><span>Šaľa · sklad</span><span>Cieľ · doprava</span></p>
+    <div class="trasa">
+      <article class="stanica">
+        {{ img('colna.jpg', 'Colná deklarácia', sizes='(min-width: 56rem) 22rem, 100vw') }}
+        <h3>Colná deklarácia</h3>
+        <ul role="list">
+          <li>vystavovanie colných dokladov</li>
+          <li>zastupovanie v colnom konaní</li>
+          <li>zabezpečenie colného dlhu</li>
+          <li>spracovanie hlásenia INTRASTAT</li>
+        </ul>
+      </article>
+      <article class="stanica">
+        {{ img('sklad.jpg', 'Verejný colný sklad', sizes='(min-width: 56rem) 22rem, 100vw') }}
+        <h3>Verejný colný sklad</h3>
+        <ul role="list">
+          <li>skladovanie a evidencia tovaru</li>
+          <li>paletizovanie tovaru</li>
+          <li>manipulácia s tovarom</li>
+          <li>komplexné služby colnej deklarácie</li>
+        </ul>
+      </article>
+      <article class="stanica">
+        {{ img('doprava.png', 'Autodoprava', sizes='(min-width: 56rem) 22rem, 100vw') }}
+        <h3>Autodoprava</h3>
+        <ul role="list">
+          <li>nákladná doprava do 12 ton, medzinárodná aj vnútroštátna, aj JIT</li>
+          <li>zasielateľstvo, aj JIT</li>
+          <li>preprava a distribúcia kusových zásielok</li>
+          <li>expresná preprava do 24 hod.</li>
+          <li>preprava nebezpečných nákladov – ADR</li>
+          <li>poistenie tovaru</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sekce o-nas" id="o-nas">
+  <div class="wrap dva">
+    <div>
+      <p class="kicker">O nás</p>
+      <h2>Od roku 1991 s Vašimi zásielkami</h2>
+    </div>
+    <div>
+      <p>Naša spoločnosť sa zaoberá prepravou tovaru a colnou deklaráciou od roku 1991. Dopravu, sklad a colné doklady máte u nás pod jednou strechou, takže sa nemusíte obracať na tri rôzne firmy.</p>
+      <p class="adresy"><span><b>Šaľa</b>Staničná 23/4, colný sklad a autodoprava</span><span><b>Galanta</b>Priemyselná 8, areál Alinexu, colná deklarácia</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="autopozicovna">
+  <div class="wrap">
+    <p class="kicker">Autopožičovňa</p>
+    <h2>Požičajte si 7‑miestne&nbsp;vozidlo</h2>
+    <div class="dva">
+      <div>
+        <ul role="list" class="fakty">
+          <li><span>Miesta na sedenie</span><b>7</b></li>
+          <li><span>Palivo</span><b>Diesel, 1997 cm³</b></li>
+          <li><span>Prevodovka</span><b>automatická</b></li>
+          <li><span>Limit na deň</span><b>400 km</b></li>
+          <li><span>Kaucia</span><b>800 €</b></li>
+        </ul>
+        <p class="poznamka">Výbava: automatická klimatizácia, navigácia, ASR, ESP, EBD, tempomat, 5 dverí. V cene je PZP, havarijné poistenie (spoluúčasť 200 €), asistenčné služby, údržba, servis a sezónne pneumatiky. Kilometre nad limit 0,25 € / km. Ceny sú bez DPH.</p>
+      </div>
+      <table class="cennik">
+        <caption>Cenník (bez DPH)</caption>
+        <thead><tr><th scope="col">Dĺžka prenájmu</th><th scope="col">Cena za deň</th></tr></thead>
+        <tbody>
+          <tr><td>1–3 dni</td><td>100 €</td></tr>
+          <tr><td>4–9 dní</td><td>90 €</td></tr>
+          <tr><td>10–17 dní</td><td>80 €</td></tr>
+          <tr><td>18–24 dní</td><td>70 €</td></tr>
+          <tr><td>25–29 dní</td><td>60 €</td></tr>
+          <tr><td>Viac ako mesiac</td><td>60 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sekce svetla" id="kontakt">
+  <div class="wrap dva">
+    <div>
+      <p class="kicker">Kontakt</p>
+      <h2>Napíšte nám</h2>
+      <p>Pošlite nám dopyt na prepravu, sklad alebo colné vybavenie. Ozveme sa Vám.</p>
+      <address>
+        <strong>Colný sklad, autodoprava</strong><br>
+        Staničná 23/4, 927 01 Šaľa<br>
+        <a href="mailto:tandb@tandb.sk">tandb@tandb.sk</a><br>
+        <a href="tel:+421903404975">+421 903 404 975</a>
+      </address>
+      <address>
+        <strong>Colná deklarácia</strong><br>
+        Priemyselná 8 (areál Alinexu), 924 00 Galanta<br>
+        <a href="tel:+421317803964">+421 31 780 39 64</a>
+      </address>
+      <p class="poznamka">T & B, s.r.o. · IČO 36529265 · IČ DPH SK2020190315 · P.O.Box 3, 925 71 Trnovec nad Váhom 4</p>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+{% endblock %}

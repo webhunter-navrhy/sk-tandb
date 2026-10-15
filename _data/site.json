@@ -1,0 +1,51 @@
+{
+  "slug": "sk-tandb",
+  "nazev": "T&B s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-tandb/",
+  "base": "/sk-tandb/",
+  "lang": "sk",
+  "popis": "T&B s.r.o., Šaľa a Galanta: colná deklarácia, verejný colný sklad a autodoprava do 12 ton, medzinárodná aj vnútroštátna, od roku 1991.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "vozidlo.jpg",
+  "logo": "logo.png",
+  "theme_color": "#1a1c20",
+  "typ": "LocalBusiness",
+  "ico": "36529265",
+  "kontakt": {
+    "email": "tandb@tandb.sk",
+    "telefon": "+421 903 404 975",
+    "adresa": {
+      "ulice": "Staničná 23/4",
+      "psc": "927 01",
+      "mesto": "Šaľa",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Autopožičovňa",
+      "href": "#autopozicovna"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

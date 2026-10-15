@@ -1,0 +1,15 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Služby (PC buňka 2, mobil buňka 1–2): trasa je nakreslená dvakrát a nesedí na sloupce. Nahoře jsou krátké červené úseky s popisky Galanta · clo / Šaľa · sklad / Cieľ · doprava, pod nimi zvlášť dlouhá čára s tečkami, které nejsou nad středy sloupců. Nadpis Autodoprava je asi o 16 px výš než Colná deklarácia a Verejný colný sklad, protože fotka dodávky má jiný poměr stran. Na mobilu se popisek Cieľ · doprava zalomí na druhý řádek. Oprava: jedna souvislá čára se třemi zastávkami přesně nad středy sloupců a popisky pod tečkami. Všechny tři fotky dát do 4:3 s object-fit: cover, aby nadpisy byly v jedné linii. Na ≤ 600 px horizontální popisky skrýt a nechat jen svislou časovou osu.",
+    "Koncept končí u Služeb. O nás (PC buňka 3) jsou dva řídké sloupce s velkou prázdnou plochou. Autopožičovňa jsou jen dvě suché tabulky a vozidlo, které se půjčuje, na fotce vůbec není. Kontakt je obecný šedý blok. Celé to působí jako korporátní šablona. Oprava: v O nás udělat z adres Šaľa a Galanta dvě zastávky téže trasy (stejné červené tečky a čára jako ve Službách) a přidat fotku skladu nebo areálu Alinex. V Autopožičovni dát vlevo velkou fotku 7místného vozu a vpravo parametry i ceník v jedné kartě s jednou hlavní cenou (od 60 € / deň) a tlačítkem Rezervovať.",
+    "Fotky a mobil: fotky ve Službách jsou obecné stocky (podložka s papíry a notebook, krabice na paletě, dodávka na bílém pozadí). Na mobilu (buňka 2–3) jsou to miniatury široké asi 105 px a seznam vedle nich má sloupec asi 130 px, takže se láme po dvou slovech (zastupovanie v / colnom konaní). Logo T&B je v mobilní hlavičce nahoře oříznuté. Oprava: na ≤ 480 px dát fotku přes celou šířku nad nadpis (16:9) a seznam pod ni, také přes celou šířku. Hlavičce na mobilu přidat padding-top asi 8 px a výšku tak, aby bylo logo celé. Stocky nahradit skutečnými fotkami firmy (sklad Šaľa, vozový park), pokud je klient má na webu nebo na Google Maps."
+  ],
+  "silne": [
+    "Logo T&B je vlevo v hlavičce a drží se červeno-bílého brandu klienta, žádná vymyšlená paleta.",
+    "Z hera je hned jasné, co firma dělá, odkud je a jak ji oslovit (Pošlite dopyt). Na mobilu má hlavička stálé CTA a kontakt má obě pobočky, e-mail, telefony a IČO.",
+    "Obsah je skutečný: adresy, ceník autopožičovne, parametry vozu, rok 1991 z webu klienta. Nejsou tu běžící pás, zrno, číslování 01/02/03 ani vymyšlená čísla."
+  ],
+  "verdikt": "opravit – je to čisté, pravdivé a v brandu klienta, ale po heru to působí jako generická korporátní šablona. Nápad s trasou je rozbitý a nepokračuje do dalších sekcí a na mobilu jsou Služby stísněné.",
+  "_hash": "9d00b1697a68bf419406cca58b9f2b79e1b4b44b"
+}
