@@ -167,3 +167,7 @@ html { scroll-padding-top: 5rem; }
   .stanica::before { top:.2rem; }
   .stanica .zastavka { margin-top:0; }
 }
+/* kolo 4 */
+.stanica picture, .stanica img { display:block; }
+.stanica img { height:11rem !important; }
+@media (max-width:40rem){ .stanica img { height:auto !important; max-width:22rem; } }
