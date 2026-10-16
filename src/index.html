@@ -16,10 +16,10 @@
   <div class="wrap">
     <p class="kicker">Hlavné činnosti</p>
     <h2>Od colnej deklarácie až po dodanie tovaru</h2>
-    <p class="miesta" aria-label="Trasa tovaru"><span>Galanta · clo</span><span>Šaľa · sklad</span><span>Cieľ · doprava</span></p>
     <div class="trasa">
       <article class="stanica">
         {{ img('colna.jpg', 'Colná deklarácia', sizes='(min-width: 56rem) 22rem, 100vw') }}
+        <p class="zastavka">Galanta · clo</p>
         <h3>Colná deklarácia</h3>
         <ul role="list">
           <li>vystavovanie colných dokladov</li>
@@ -30,6 +30,7 @@
       </article>
       <article class="stanica">
         {{ img('sklad.jpg', 'Verejný colný sklad', sizes='(min-width: 56rem) 22rem, 100vw') }}
+        <p class="zastavka">Šaľa · sklad</p>
         <h3>Verejný colný sklad</h3>
         <ul role="list">
           <li>skladovanie a evidencia tovaru</li>
@@ -40,6 +41,7 @@
       </article>
       <article class="stanica">
         {{ img('doprava.png', 'Autodoprava', sizes='(min-width: 56rem) 22rem, 100vw') }}
+        <p class="zastavka">Cieľ · doprava</p>
         <h3>Autodoprava</h3>
         <ul role="list">
           <li>nákladná doprava do 12 ton, medzinárodná aj vnútroštátna, aj JIT</li>
@@ -73,6 +75,7 @@
     <h2>Požičajte si 7‑miestne&nbsp;vozidlo</h2>
     <div class="dva">
       <div>
+        {{ img('vozidlo.jpg', '7-miestne vozidlo na prenájom', sizes='(min-width: 56rem) 34rem, 100vw') }}
         <ul role="list" class="fakty">
           <li><span>Miesta na sedenie</span><b>7</b></li>
           <li><span>Palivo</span><b>Diesel, 1997 cm³</b></li>
@@ -83,7 +86,7 @@
         <p class="poznamka">Výbava: automatická klimatizácia, navigácia, ASR, ESP, EBD, tempomat, 5 dverí. V cene je PZP, havarijné poistenie (spoluúčasť 200 €), asistenčné služby, údržba, servis a sezónne pneumatiky. Kilometre nad limit 0,25 € / km. Ceny sú bez DPH.</p>
       </div>
       <table class="cennik">
-        <caption>Cenník (bez DPH)</caption>
+        <caption>Cenník (bez DPH) · od 60 € / deň</caption>
         <thead><tr><th scope="col">Dĺžka prenájmu</th><th scope="col">Cena za deň</th></tr></thead>
         <tbody>
           <tr><td>1–3 dni</td><td>100 €</td></tr>

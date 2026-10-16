@@ -154,3 +154,16 @@ html { scroll-padding-top: 5rem; }
   .stanica::before { content:""; position:absolute; left:0; top:calc(-1 * var(--space-4) - .45rem); width:.9rem; height:.9rem; border-radius:50%; background:var(--accent); }
   .stanica { position:relative; }
 }
+
+/* kolo 3 */
+.stanica img, .stanica img[src] { max-width:none; width:100%; aspect-ratio:4/3; object-fit:cover; }
+.zastavka { font-weight:700; color:var(--accent); font-size:var(--step--1); margin:0 0 .25rem; text-transform:uppercase; letter-spacing:.04em; }
+#autopozicovna .dva > div:first-child img { width:100%; aspect-ratio:16/10; object-fit:cover; margin-bottom:var(--space-2); }
+@media (max-width:40rem){
+  .hlavicka .wrap { padding-block:.6rem; }
+  .hlavicka .logo img { height:40px; }
+  .stanica { display:block; }
+  .stanica img { width:100%; aspect-ratio:16/9; margin-bottom:var(--space-2); }
+  .stanica::before { top:.2rem; }
+  .stanica .zastavka { margin-top:0; }
+}
