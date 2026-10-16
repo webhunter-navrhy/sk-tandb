@@ -171,3 +171,5 @@ html { scroll-padding-top: 5rem; }
 .stanica picture, .stanica img { display:block; }
 .stanica img { height:11rem !important; }
 @media (max-width:40rem){ .stanica img { height:auto !important; max-width:22rem; } }
+.velka-cena{display:block;font-size:var(--step-3);font-weight:800;color:var(--accent);line-height:1.1;margin-bottom:.4rem}
+.stanica{align-self:start}
