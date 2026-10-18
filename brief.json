@@ -1,0 +1,19 @@
+{
+  "firma": "T&B, s.r.o.",
+  "obor": "colná deklarácia, verejný colný sklad, autodoprava do 12 t, autopožičovňa",
+  "mesto": "Šaľa (sklad, doprava), Galanta (colná deklarácia)",
+  "ico": "36529265",
+  "kontakty": {"email": "tandb@tandb.sk", "telefon_sala": "+421 903 404 975", "telefon_galanta": "+421 31 780 39 64"},
+  "jazyk": "sk",
+  "ton": "vecný, dopravná firma, bez marketingových fráz",
+  "brand": {"logo": "static/logo.png (tandb.sk logo-tandb.png)", "barvy": ["#BC0C06", "#1a1c20", "#ffffff"], "pismo": "Figtree"},
+  "fotky": "foto/zdroje.txt – len fotky z tandb.sk (vozový park, autopožičovňa), žiadne stocky",
+  "fakta": [
+    {"fakt": "od roku 1991 preprava tovaru a colná deklarácia", "zdroj": "tandb.sk úvod"},
+    {"fakt": "služby colnej deklarácie, skladu a autodopravy (zoznamy)", "zdroj": "tandb.sk úvod, /autodoprava/, /colna-deklaracia/, /verejny-colny-sklad/"},
+    {"fakt": "vozidlá Renault Kangoo 1 paleta 3 m3 500 kg 1731x1218x1150; Renault Master 3 palety 12 m3 1100 kg 3733x1765x1800; MAN TGL 16 paliet 40 m3 2500 kg 6625x2480x2500; MAN TGL 18 paliet 50 m3 5200 kg 7420x2480x2700", "zdroj": "tandb.sk/autodoprava/"},
+    {"fakt": "autopožičovňa: 7 miest, diesel 1997 cm3, automat, výbava; cenník 100/90/80/70/60 € bez DPH, kaucia 800 €, 400 km/deň", "zdroj": "tandb.sk/autopozicovna/ + cenník PDF 2023"},
+    {"fakt": "adresy Staničná 23/4 Šaľa; Priemyselná 8 (areál Alinexu) Galanta; IČ DPH SK2020190315", "zdroj": "tandb.sk/kontakty/"}
+  ],
+  "chybi": ["fotky skladu v Šali a kancelárie v Galante", "aktuálny cenník autodopravy (na webe je PDF z 2023)", "údaje o vozidlách Iveco a Fuso z fotiek"]
+}

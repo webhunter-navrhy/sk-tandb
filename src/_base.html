@@ -36,7 +36,8 @@
 </main>
 <footer class="paticka">
   <div class="wrap">
-    <p>{{ site.nazev }}{% if site.ico %} · IČO {{ site.ico }}{% endif %}</p>
+    <img src="{{ base }}logo-biele.png" alt="" width="84" height="40" class="logo-paticka">
+    <p>{{ site.nazev }}{% if site.ico %} · IČO {{ site.ico }}{% endif %} · IČ DPH SK2020190315<br>Staničná 23/4, 927 01 Šaľa</p>
     {% if site.kontakt.email %}<p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>{% endif %}
     {% if site.kontakt.telefon %}<p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>{% endif %}
   </div>

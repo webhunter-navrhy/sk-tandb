@@ -1,0 +1,6 @@
+[
+  {"nazov": "Renault Kangoo", "foto": "renault-kangoo.jpg", "palety": "1 paleta EUR", "objem": "3 m³", "nosnost": "500 kg", "d": 1731, "s": 1218, "v": 1150, "plan": {"n_d": 1, "n_s": 1, "pd": 1200, "ps": 800}},
+  {"nazov": "Renault Master", "foto": "renault-master.jpg", "palety": "3 palety EUR", "objem": "12 m³", "nosnost": "1 100 kg", "d": 3733, "s": 1765, "v": 1800, "plan": {"n_d": 3, "n_s": 1, "pd": 800, "ps": 1200}},
+  {"nazov": "MAN TGL", "foto": "man-tgl.jpg", "palety": "16 paliet EUR", "objem": "40 m³", "nosnost": "2 500 kg", "d": 6625, "s": 2480, "v": 2500, "plan": {"n_d": 8, "n_s": 2, "pd": 800, "ps": 1200}},
+  {"nazov": "MAN TGL", "foto": "man-tgl-2.jpg", "palety": "18 paliet EUR", "objem": "50 m³", "nosnost": "5 200 kg", "d": 7420, "s": 2480, "v": 2700, "plan": {"n_d": 6, "n_s": 3, "pd": 1200, "ps": 800}}
+]

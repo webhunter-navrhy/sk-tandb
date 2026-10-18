@@ -1,15 +1,18 @@
 {
-  "znamka": 7,
+  "znamka": 8,
   "slabiny": [
-    "Služby (PC buňka 2, mobil buňka 2–3) jsou opravené jen zčásti. Teď je tam jedna souvislá čára a na mobilu jen svislá osa, to je dobře. Tečky ale sedí na levých hranách sloupců, ne nad jejich středy. Popisek CIEĽ · DOPRAVA a nadpis Autodoprava jsou pořád asi o 12–24 px výš než v prvních dvou sloupcích. Oprava: kartám dát align-items: start a všem stejnou strukturu (fotka 4:3, popisek, h3) a tečky umístit na left: 50 % sloupce. Na mobilu se fotky colna/sklad/doprava-350.webp zvětšují na 659 px (1,88×, QA varování), takže jsou rozmazané. Do srcset přidat varianty 720 a 1080 se sizes=\"100vw\". Fotky jsou dál obecné stocky (podložka s notebookem, krabice, dodávka na bílém pozadí). Pokud jsou na tandb.sk nebo na Google Maps fotky skladu v Šali, použít je.",
-    "O nás (PC buňka 3, mobil buňka 3–4) není opravené. Šaľa a Galanta jsou pořád dva textové bloky s červenou svislou linkou, ne zastávky trasy. Vlevo pod nadpisem „Od roku 1991 s Vašimi zásielkami“ zůstává velká prázdná plocha a fotka skladu nebo areálu Alinex chybí. Oprava: použít stejnou komponentu jako ve Službách (vodorovná čára, dvě červené tečky Šaľa → Galanta, adresy pod tečkami) a do levého sloupce pod nadpis dát fotku skladu nebo areálu.",
-    "Autopožičovňa a Kontakt (PC buňka 3–4, mobil buňka 4–6) jsou opravené jen zčásti. Fotka vozu vlevo přibyla, ale vpravo je dál šestiřádková tabulka cen a hlavní cena „od 60 € / deň“ je jen malý popisek nad ní. Tlačítko Rezervovať chybí a parametry jsou zvlášť pod fotkou. Oprava: vpravo jedna karta s velkou cenou od 60 € / deň, třemi klíčovými parametry (7 miest, automat, diesel), cenovými pásmy v rozbalovacím seznamu a tlačítkem Rezervovať, které vede na formulář s předvyplněným předmětem. Kontakt je pořád obecný šedý blok. Obě pobočky v něm stačí pojmout jako dvě zastávky trasy (tečka, adresa, telefon) a formulář nechat vedle."
+    "Služby (PC buňka 3): tři centrované seznamy v úzkých sloupcích končí zhruba v polovině výšky sekce a pod nimi zůstává asi 70 px prázdné bílé plochy, než začne šedý Vozový park. Centrované řádky seznamu se navíc čtou hůř. Oprava: položky seznamu zarovnat vlevo pod nadpis sloupce (popisek a h3 můžou zůstat na středu pod tečkou) a spodní padding sekce zmenšit asi na polovinu.",
+    "O nás (PC buňka 5): trasa Šaľa → Galanta je pod odstavcem malá. Čára je krátká, tečky drobné a adresy mají asi 11 px, takže působí jako poznámka, ne jako hlavní prvek sekce. V Kontaktu jsou přitom zastávky výrazné. Oprava: protáhnout trasu přes celou šířku pravého sloupce, popisky ŠAĽA/GALANTA a adresy zvětšit na velikost textu v Kontaktu (asi 14–15 px) a nad trasu dát víc místa.",
+    "Vozový park (mobil buňky 3–5): každá karta vozidla zabere skoro celou obrazovku, hlavně kvůli velkému čárkovanému rámečku s diagramem palet. Čtyři auta tak znamenají čtyři obrazovky scrollování. Oprava: na šířce do 600 px snížit výšku diagramu asi na 90 px, fotku a název nechat vedle sebe a tabulku parametrů zhustit, aby se na jednu obrazovku vešla aspoň dvě auta."
   ],
+  "zavazne": [],
   "silne": [
-    "Brand drží: logo T&B vlevo v hlavičce, paleta jen bílá, černá a červená z loga, písmo Figtree se slovenskými znaky bez problémů.",
-    "Mobil je výrazně lepší: fotky přes celou šířku, seznamy se už nelámou po dvou slovech, svislá časová osa ve Službách, nic nepřetéká (QA 0 chyb na všech 6 šířkách).",
-    "Obsah je věcný a z podkladů klienta (rok 1991, adresy, IČO, ceník, parametry vozu), hero jasně říká, co firma dělá, a vede na „Pošlite dopyt“."
+    "Koncept „Cesta Vašej zásielky“ teď drží celý web: souvislá čára s tečkami nad středy sloupců ve Službách, trasa Šaľa → Galanta v O nás a dvě zastávky s adresou a telefonem v Kontaktu. Na mobilu je z toho svislá osa.",
+    "Obecné stockové fotky ze Služeb zmizely a celý web teď stojí jen na fotkách klienta z tandb.sk (Iveco, Fuso, Renault, MAN, auto z autopožičovne).",
+    "Vozový park s diagramy ložné plochy v jednom měřítku je nápad přímo z oboru. Údaje (palety, m³, kg, rozměry) sedí s briefem.",
+    "Autopožičovna je teď jedna přehledná karta: velká cena od 60 € / deň, tři parametry, ceník v rozbalovacím seznamu a tlačítko Rezervovať auto.",
+    "Logo T&B je vlevo v hlavičce, červená #BC0C06 a tmavá #1a1c20 jsou z brandu. Písmo Figtree má háčky v pořádku a QA je bez chyb i bez přetékání na všech šířkách."
   ],
-  "verdikt": "opravit – mobil a čára ve Službách se zlepšily, ale koncept trasy dál končí u Služeb. O nás, Autopožičovňa a Kontakt zůstávají šablonovité a fotky jsou stocky, na mobilu navíc rozmazané (1,88×).",
-  "_hash": "b11916dc195d471cd1d5c25be37a1365a944fb10"
+  "verdikt": "Všechny tři výtky z minulého kola jsou opravené a nová závažná vada tam není. Web má jeden jasný koncept z oboru a stojí na reálných fotkách a faktech klienta, takže je ho možné poslat. Zbývající slabiny jsou jen doladění rytmu a mobilu.",
+  "_hash": "1019e37255b8897cc0f5f9a4f2f5989172811a4c"
 }

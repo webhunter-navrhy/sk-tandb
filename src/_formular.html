@@ -3,6 +3,9 @@
   <label>Meno <input name="jmeno" autocomplete="name" required></label>
   <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
   <label>Telefón <input name="telefon" type="tel" autocomplete="tel"></label>
+  <label>Týka sa <select name="tema">
+    <option>Colná deklarácia</option><option>Colný sklad</option><option>Autodoprava</option><option>Autopožičovňa</option><option>Iné</option>
+  </select></label>
   <label>Správa <textarea name="zprava" rows="5" required></textarea></label>
   <div class="past" aria-hidden="true"><label>Nevypĺňať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
   <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">

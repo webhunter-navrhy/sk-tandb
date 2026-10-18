@@ -1,9 +1,9 @@
 {
-  "url": "https://webhunter-navrhy.github.io/sk-tandb/",
+  "url": "http://localhost:8791/sk-tandb/",
   "ok": true,
   "chyby": [],
   "varovani": [
-    "Roztažené fotky >1,3× (mobil, 3): img/colna-350.webp nat 350 px, vykresleno 659 px (1.88×); img/sklad-350.webp nat 350 px, vykresleno 659 px (1.88×); img/doprava-350.webp nat 350 px, vykresleno 659 px (1.88×)"
+    "Web má noindex (u ostrého webu pravděpodobně chyba)"
   ],
   "metriky": {
     "sirky": {
@@ -32,18 +32,18 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 0.2,
+    "preneseno_PC_MB": 0.42,
     "nejvetsi_obrazek_PC": {
-      "kB": 71,
-      "url": "https://webhunter-navrhy.github.io/sk-tandb/img/vozidlo-1920.webp"
+      "kB": 58,
+      "url": "http://localhost:8791/sk-tandb/img/pozicovna-640.webp"
     },
-    "snimku_PC": 4,
-    "preneseno_mobil_MB": 0.16,
+    "snimku_PC": 7,
+    "preneseno_mobil_MB": 0.42,
     "nejvetsi_obrazek_mobil": {
-      "kB": 41,
-      "url": "https://webhunter-navrhy.github.io/sk-tandb/img/vozidlo-1280.webp"
+      "kB": 58,
+      "url": "http://localhost:8791/sk-tandb/img/pozicovna-640.webp"
     },
-    "snimku_mobil": 6,
+    "snimku_mobil": 8,
     "seo": {
       "title": "T&B s.r.o. – colná deklarácia, colný sklad a autodoprava, Šaľa",
       "description": "T&B s.r.o., Šaľa a Galanta: colná deklarácia, verejný colný sklad a autodoprava do 12 ton, medzináro",
@@ -60,6 +60,10 @@
     },
     "maly_dotykovy_cil": 0,
     "font_nadpis": "Figtree",
-    "font_text": "Figtree"
+    "font_text": "Figtree",
+    "podstranky": {
+      "stranek": 1,
+      "obrazku": 14
+    }
   }
 }

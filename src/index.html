@@ -3,55 +3,94 @@
 {% set cesta = '' %}
 {% block obsah %}
 <section class="hero">
-  <div class="hero-foto">{{ img('vozidlo.jpg', 'Dodávka T&B na ceste', sizes='100vw') }}</div>
-  <div class="wrap hero-text">
-    <p class="kicker">Colná deklarácia · Colný sklad · Autodoprava</p>
-    <h1>Rýchlo a spoľahlivo.<br>Tovar, doklady aj clo na jednom mieste.</h1>
-    <p class="lead">Prepravou tovaru a colnou deklaráciou sa zaoberáme od roku 1991. Z Šale a Galanty vybavíme colné konanie, uskladnenie aj dopravu.</p>
-    <p><a class="tlacitko" href="#kontakt">Pošlite dopyt</a> <a class="tlacitko druhe" href="#sluzby">Naše služby</a></p>
+  <div class="wrap hero-mriezka">
+    <div class="hero-text">
+      <p class="kicker">Šaľa · Galanta · od roku 1991</p>
+      <h1>Clo, sklad a&nbsp;doprava pod jednou strechou</h1>
+      <p class="lead">Vybavíme colné doklady v&nbsp;Galante, uskladníme tovar v&nbsp;colnom sklade v&nbsp;Šali a&nbsp;odvezieme ho vlastnými autami do 12&nbsp;ton, doma aj do zahraničia.</p>
+      <p class="akcie"><a class="tlacitko" href="#kontakt">Pošlite dopyt</a> <a class="tlacitko druhe" href="#vozidla">Naše vozidlá</a></p>
+    </div>
+    <figure class="hero-foto">
+      {{ img('iveco.jpg', 'Nákladné vozidlo Iveco Eurocargo s nápisom T&B s.r.o.', sizes='(min-width: 56rem) 30rem, 50vw') }}
+      {{ img('fuso.jpg', 'Nákladné vozidlo Fuso z vozového parku T&B', sizes='50vw', cls='len-mobil') }}
+    </figure>
   </div>
 </section>
 
 <section class="sekce" id="sluzby">
   <div class="wrap">
     <p class="kicker">Hlavné činnosti</p>
-    <h2>Od colnej deklarácie až po dodanie tovaru</h2>
-    <div class="trasa">
-      <article class="stanica">
-        {{ img('colna.jpg', 'Colná deklarácia', sizes='(min-width: 56rem) 22rem, 100vw') }}
-        <p class="zastavka">Galanta · clo</p>
+    <h2>Cesta Vašej zásielky</h2>
+    <ol class="trasa trasa-3" role="list">
+      <li class="zastavka">
+        <span class="bod" aria-hidden="true"></span>
+        <p class="miesto">Galanta</p>
         <h3>Colná deklarácia</h3>
         <ul role="list">
           <li>vystavovanie colných dokladov</li>
-          <li>zastupovanie v colnom konaní</li>
+          <li>zastupovanie v&nbsp;colnom konaní</li>
           <li>zabezpečenie colného dlhu</li>
           <li>spracovanie hlásenia INTRASTAT</li>
         </ul>
-      </article>
-      <article class="stanica">
-        {{ img('sklad.jpg', 'Verejný colný sklad', sizes='(min-width: 56rem) 22rem, 100vw') }}
-        <p class="zastavka">Šaľa · sklad</p>
+      </li>
+      <li class="zastavka">
+        <span class="bod" aria-hidden="true"></span>
+        <p class="miesto">Šaľa</p>
         <h3>Verejný colný sklad</h3>
         <ul role="list">
-          <li>skladovanie a evidencia tovaru</li>
+          <li>skladovanie a&nbsp;evidencia tovaru</li>
           <li>paletizovanie tovaru</li>
-          <li>manipulácia s tovarom</li>
+          <li>manipulácia s&nbsp;tovarom</li>
           <li>komplexné služby colnej deklarácie</li>
         </ul>
-      </article>
-      <article class="stanica">
-        {{ img('doprava.png', 'Autodoprava', sizes='(min-width: 56rem) 22rem, 100vw') }}
-        <p class="zastavka">Cieľ · doprava</p>
+      </li>
+      <li class="zastavka">
+        <span class="bod" aria-hidden="true"></span>
+        <p class="miesto">Doma aj v&nbsp;zahraničí</p>
         <h3>Autodoprava</h3>
         <ul role="list">
-          <li>nákladná doprava do 12 ton, medzinárodná aj vnútroštátna, aj JIT</li>
+          <li>nákladná doprava do 12&nbsp;ton, aj JIT</li>
           <li>zasielateľstvo, aj JIT</li>
-          <li>preprava a distribúcia kusových zásielok</li>
-          <li>expresná preprava do 24 hod.</li>
-          <li>preprava nebezpečných nákladov – ADR</li>
+          <li>kusové a&nbsp;čiastkové zásielky</li>
+          <li>expresná preprava do 24&nbsp;hod.</li>
+          <li>nebezpečné náklady – ADR</li>
           <li>poistenie tovaru</li>
         </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sekce vozidla" id="vozidla">
+  <div class="wrap">
+    <div class="hlava-sekcie">
+      <div>
+        <p class="kicker">Vozový park</p>
+        <h2>Od jednej palety po osemnásť</h2>
+      </div>
+      <p>Ložné plochy našich vozidiel v&nbsp;jednej mierke, čiarkovane najväčšie auto. Podľa veľkosti zásielky vyberieme auto, ktoré sa oplatí.</p>
+    </div>
+    <div class="flotila">
+      {% set M = 7600 %}
+      {% for v in data.vozidla %}
+      <article class="vozidlo">
+        {{ img(v.foto, v.nazov ~ ' z vozového parku T&B', sizes='(min-width: 72rem) 17rem, (min-width: 40rem) 45vw, 100vw') }}
+        <h3>{{ v.nazov }}</h3>
+        <p class="palety">{{ v.palety }}</p>
+        <svg class="plan" viewBox="-20 -20 {{ M + 40 }} 2560" preserveAspectRatio="xMinYMax meet" role="img" aria-label="Ložná plocha {{ v.d }} × {{ v.s }} mm, {{ v.palety }}">
+          <rect x="0" y="0" width="7420" height="2480" class="mierka"/>
+          <rect x="0" y="{{ 2480 - v.s }}" width="{{ v.d }}" height="{{ v.s }}" class="lozna"/>
+          {% for i in range(v.plan.n_d) %}{% for j in range(v.plan.n_s) %}
+          <rect x="{{ i * v.plan.pd + 40 }}" y="{{ 2480 - v.s + j * v.plan.ps + 40 }}" width="{{ v.plan.pd - 80 }}" height="{{ v.plan.ps - 80 }}" class="paleta"/>
+          {% endfor %}{% endfor %}
+        </svg>
+        <dl class="parametre">
+          <div><dt>Objem</dt><dd>{{ v.objem }}</dd></div>
+          <div><dt>Nosnosť</dt><dd>{{ v.nosnost }}</dd></div>
+          <div><dt>Ložná plocha</dt><dd>{{ '{:,}'.format(v.d).replace(',', ' ') }} × {{ '{:,}'.format(v.s).replace(',', ' ') }} mm</dd></div>
+        </dl>
       </article>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -60,66 +99,82 @@
   <div class="wrap dva">
     <div>
       <p class="kicker">O nás</p>
-      <h2>Od roku 1991 s Vašimi zásielkami</h2>
+      <h2>Od roku 1991 s&nbsp;Vašimi zásielkami</h2>
+      <figure class="foto-o-nas">{{ img('fuso.jpg', 'Nákladné vozidlo Fuso spoločnosti T&B', sizes='(min-width: 56rem) 28rem, 100vw') }}</figure>
     </div>
-    <div>
-      <p>Naša spoločnosť sa zaoberá prepravou tovaru a colnou deklaráciou od roku 1991. Dopravu, sklad a colné doklady máte u nás pod jednou strechou, takže sa nemusíte obracať na tri rôzne firmy.</p>
-      <p class="adresy"><span><b>Šaľa</b>Staničná 23/4, colný sklad a autodoprava</span><span><b>Galanta</b>Priemyselná 8, areál Alinexu, colná deklarácia</span></p>
+    <div class="o-nas-text">
+      <p class="vacsi">Naša spoločnosť sa zaoberá prepravou tovaru a&nbsp;colnou deklaráciou od roku 1991.</p>
+      <p>Dopravu, sklad a&nbsp;colné doklady máte u&nbsp;nás na jednom mieste, takže sa nemusíte obracať na tri rôzne firmy. Tovar, ktorý preclíme, vieme uskladniť aj odviezť.</p>
+      <ol class="trasa trasa-2" role="list">
+        <li class="zastavka">
+          <span class="bod" aria-hidden="true"></span>
+          <p class="miesto">Šaľa</p>
+          <p>Staničná 23/4<br>colný sklad a&nbsp;autodoprava</p>
+        </li>
+        <li class="zastavka">
+          <span class="bod" aria-hidden="true"></span>
+          <p class="miesto">Galanta</p>
+          <p>Priemyselná 8, areál Alinexu<br>colná deklarácia</p>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 
-<section class="sekce" id="autopozicovna">
+<section class="sekce pozicovna" id="autopozicovna">
   <div class="wrap">
     <p class="kicker">Autopožičovňa</p>
-    <h2>Požičajte si 7‑miestne&nbsp;vozidlo</h2>
-    <div class="dva">
-      <div>
-        {{ img('vozidlo.jpg', '7-miestne vozidlo na prenájom', sizes='(min-width: 56rem) 34rem, 100vw') }}
-        <ul role="list" class="fakty">
-          <li><span>Miesta na sedenie</span><b>7</b></li>
-          <li><span>Palivo</span><b>Diesel, 1997 cm³</b></li>
-          <li><span>Prevodovka</span><b>automatická</b></li>
-          <li><span>Limit na deň</span><b>400 km</b></li>
-          <li><span>Kaucia</span><b>800 €</b></li>
-        </ul>
-        <p class="poznamka">Výbava: automatická klimatizácia, navigácia, ASR, ESP, EBD, tempomat, 5 dverí. V cene je PZP, havarijné poistenie (spoluúčasť 200 €), asistenčné služby, údržba, servis a sezónne pneumatiky. Kilometre nad limit 0,25 € / km. Ceny sú bez DPH.</p>
+    <h2>Požičajte si 7‑miestne auto s&nbsp;automatom</h2>
+    <div class="pozicovna-mriezka">
+      <div class="galeria">
+        {{ img('pozicovna.jpg', '7-miestne vozidlo Renault na prenájom', sizes='(min-width: 56rem) 22rem, 62vw', cls='hlavna') }}
+        {{ img('pozicovna-interier.jpg', 'Sedadlá pre 7 osôb v interiéri vozidla', sizes='(min-width: 56rem) 11rem, 32vw') }}
+        {{ img('pozicovna-palubka.jpg', 'Palubná doska s navigáciou a automatickou prevodovkou', sizes='(min-width: 56rem) 11rem, 32vw') }}
       </div>
-      <table class="cennik">
-        <caption><span class="velka-cena">od 60 € / deň</span> Cenník (bez DPH)</caption>
-        <thead><tr><th scope="col">Dĺžka prenájmu</th><th scope="col">Cena za deň</th></tr></thead>
-        <tbody>
-          <tr><td>1–3 dni</td><td>100 €</td></tr>
-          <tr><td>4–9 dní</td><td>90 €</td></tr>
-          <tr><td>10–17 dní</td><td>80 €</td></tr>
-          <tr><td>18–24 dní</td><td>70 €</td></tr>
-          <tr><td>25–29 dní</td><td>60 €</td></tr>
-          <tr><td>Viac ako mesiac</td><td>60 €</td></tr>
-        </tbody>
-      </table>
-      <p><a class="tlacitko" href="#kontakt">Rezervovať</a></p>
+      <div class="karta">
+        <p class="cena"><span>od</span> 60&nbsp;€ <span>/ deň bez DPH</span></p>
+        <ul role="list" class="znaky">
+          <li>7 miest</li><li>automat</li><li>diesel 1997&nbsp;cm³</li>
+        </ul>
+        <p class="karta-text">V&nbsp;cene je PZP, havarijné poistenie (spoluúčasť 200&nbsp;€), asistenčné služby, servis, sezónne pneumatiky a&nbsp;400&nbsp;km na deň. Kaucia 800&nbsp;€.</p>
+        <details class="cennik">
+          <summary>Cenník podľa dĺžky prenájmu</summary>
+          <table>
+            <thead><tr><th scope="col">Dĺžka prenájmu</th><th scope="col">Cena za deň</th></tr></thead>
+            <tbody>
+              <tr><td>1–3 dni</td><td>100 €</td></tr>
+              <tr><td>4–9 dní</td><td>90 €</td></tr>
+              <tr><td>10–17 dní</td><td>80 €</td></tr>
+              <tr><td>18–24 dní</td><td>70 €</td></tr>
+              <tr><td>25 dní a&nbsp;viac</td><td>60 €</td></tr>
+            </tbody>
+          </table>
+          <p class="poznamka">Ceny sú bez DPH. Kilometre nad limit 0,25&nbsp;€ / km. Výbava: automatická klimatizácia, navigácia, ASR, ESP, EBD, tempomat, 5&nbsp;dverí.</p>
+        </details>
+        <a class="tlacitko" href="#kontakt" data-tema="Autopožičovňa">Rezervovať auto</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sekce svetla" id="kontakt">
+<section class="sekce kontakt" id="kontakt">
   <div class="wrap dva">
     <div>
       <p class="kicker">Kontakt</p>
       <h2>Napíšte nám</h2>
-      <p>Pošlite nám dopyt na prepravu, sklad alebo colné vybavenie. Ozveme sa Vám.</p>
-      <address>
-        <strong>Colný sklad, autodoprava</strong><br>
-        Staničná 23/4, 927 01 Šaľa<br>
-        <a href="mailto:tandb@tandb.sk">tandb@tandb.sk</a><br>
-        <a href="tel:+421903404975">+421 903 404 975</a>
-      </address>
-      <address>
-        <strong>Colná deklarácia</strong><br>
-        Priemyselná 8 (areál Alinexu), 924 00 Galanta<br>
-        <a href="tel:+421317803964">+421 31 780 39 64</a>
-      </address>
-      <p class="poznamka">T & B, s.r.o. · IČO 36529265 · IČ DPH SK2020190315 · P.O.Box 3, 925 71 Trnovec nad Váhom 4</p>
+      <p>Pošlite dopyt na prepravu, sklad, colné vybavenie alebo prenájom auta. Ozveme sa Vám.</p>
+      <ol class="trasa trasa-zvisla" role="list">
+        <li class="zastavka">
+          <span class="bod" aria-hidden="true"></span>
+          <p class="miesto">Šaľa · colný sklad, autodoprava</p>
+          <p>Staničná 23/4, 927&nbsp;01&nbsp;Šaľa<br><a href="tel:+421903404975">+421 903 404 975</a> · <a href="mailto:tandb@tandb.sk">tandb@tandb.sk</a></p>
+        </li>
+        <li class="zastavka">
+          <span class="bod" aria-hidden="true"></span>
+          <p class="miesto">Galanta · colná deklarácia</p>
+          <p>Priemyselná 8 (areál Alinexu), 924&nbsp;00&nbsp;Galanta<br><a href="tel:+421317803964">+421 31 780 39 64</a></p>
+        </li>
+      </ol>
     </div>
     <div>{% include "_formular.html" %}</div>
   </div>
